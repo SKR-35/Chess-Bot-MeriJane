@@ -1,0 +1,23 @@
+# Environment and secrets
+.env
+
+# Stockfish binaries
+engine/*.exe
+engine/*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local data and logs
+data/
+logs/
+
+# IDE
+.vscode/
+.idea/
