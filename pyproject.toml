@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "merijane"
+version = "0.1.0b1"
+description = "A personality-driven Lichess bot built on top of Stockfish."
+readme = "README.md"
+requires-python = ">=3.11"
+
+authors = [
+    { name = "SKR-35" }
+]
+
+license = { text = "Apache 2.0" }
+
+keywords = [
+    "chess",
+    "lichess",
+    "stockfish",
+    "bot",
+    "python",
+    "engine",
+    "ai"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: Apache 2.0",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "python-chess>=1.999",
+    "berserk>=0.13",
+    "PyYAML>=6.0",
+    "pydantic>=2.8",
+    "pydantic-settings>=2.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "matplotlib>=3.9",
+]
+
+[project.scripts]
+merijane-bot = "merijane.main:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src"
+]
+
+testpaths = [
+    "tests"
+]
+
+addopts = "-v"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
