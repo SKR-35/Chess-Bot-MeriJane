@@ -1,0 +1,95 @@
+bot:
+  username: MeriJane34
+
+  # Challenge settings
+  accept_challenges: true
+  accept_bot_challenges: true
+  casual_only_while_testing: false
+
+  allowed_variants: [standard]
+  allowed_speeds: [blitz, rapid, classical]
+
+  min_increment_seconds: 0
+
+  # MeriJane plays one game at a time.
+  max_concurrent_games: 1
+
+  # null = unlimited
+  # or set to 10, 25, 100...
+  session_game_limit: null
+
+engine:
+  multipv: 6
+
+  move_time_ms:
+    blitz: 700
+    rapid: 1500
+    classical: 2500
+
+  threads: 2
+  hash_mb: 256
+
+  skill_level: 8
+  max_cp_loss: 125
+
+  target_blitz_elo: 2050
+  target_rapid_elo: 2150
+  target_classical_elo: 2200
+
+  mate_score: 100000
+
+personality:
+
+  base_anxiety: 0.28
+  base_confidence: 0.62
+  base_risk_tolerance: 0.43
+
+  creativity: 0.58
+
+  # MeriJane loves the Italian Game.
+  italian_preference: 1.00
+
+  opening_familiarity_bonus: 0.34
+
+  safety_bonus: 0.22
+
+  complexity_penalty: 0.18
+
+  exchange_bonus_when_ahead: 0.20
+
+  randomness_temperature: 0.16
+
+  panic_cap: 0.18
+
+  recovery_rate: 0.30
+
+chat:
+
+  enabled: true
+
+  max_messages_per_game: 7
+
+  battery_joke_probability: 0.18
+
+  win_probability_for_battery_joke: 0.88
+  
+logging:
+  save_games: true
+  
+  save_chat: true
+  
+  save_engine_eval: true
+  
+  export_pgn: true
+  
+  export_csv: true
+  
+  lichess_games_dir: data/lichess_games
+  
+arena:
+
+  auto_export: true
+
+  generate_benchmark: true
+
+  generate_plots: true
