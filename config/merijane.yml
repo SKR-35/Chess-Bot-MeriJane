@@ -19,7 +19,7 @@ bot:
   session_game_limit: null
 
 engine:
-  multipv: 6
+  multipv: 3
 
   move_time_ms:
     blitz: 700
@@ -29,12 +29,12 @@ engine:
   threads: 2
   hash_mb: 256
 
-  skill_level: 8
+  skill_level: 15
   max_cp_loss: 125
 
-  target_blitz_elo: 2050
-  target_rapid_elo: 2150
-  target_classical_elo: 2200
+  target_blitz_elo: 2350
+  target_rapid_elo: 2350
+  target_classical_elo: 2350
 
   mate_score: 100000
 
