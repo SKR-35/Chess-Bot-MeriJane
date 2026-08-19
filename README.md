@@ -20,7 +20,7 @@ And every now and then, she might quote Istanbul.
   <img src="docs/merijane-logo.png" alt="MeriJane" width="420">
 </p>
 
---
+---
 
 ## Features
 
