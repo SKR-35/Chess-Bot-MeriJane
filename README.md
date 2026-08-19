@@ -24,7 +24,6 @@ And every now and then, she might quote Istanbul.
 
 ## Features
 
-- Official Lichess BOT
 - Powered by Stockfish
 - MultiPV candidate move selection
 - Personality-driven move choice
@@ -177,7 +176,6 @@ Arena exports:
 - [x] Hearing-aid personality
 - [x] Istanbul references
 - [x] Sudoku personality
-- [x] Official Lichess BOT
 - [ ] Opening repertoire expansion
 - [ ] Additional personality traits
 - [ ] Online statistics dashboard
