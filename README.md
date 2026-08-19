@@ -1,4 +1,4 @@
-# ♟️ MeriJane34
+# MeriJane
 
 > **A personality-driven Lichess BOT powered by Stockfish.**
 
@@ -16,7 +16,11 @@ She secretly believes Sudoku is better than chess.
 
 And every now and then, she might quote Istanbul.
 
----
+<p align="center">
+  <img src="docs/merijane-logo.png" alt="MeriJane" width="420">
+</p>
+
+--
 
 ## Features
 
